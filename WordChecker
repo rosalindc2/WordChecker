@@ -1,5 +1,11 @@
-public class WordChecker {
-    /** Initialized in the constructor and contains no null elements */
+import java.util.ArrayList;
+public class WordChecker 
+{     public WordChecker(ArrayList<String> list)
+    {
+        import java.util.ArrayList;
+        wordList = list;
+    }
+}    
     private ArrayList<String> wordList;
 
     /**
@@ -21,6 +27,7 @@ public class WordChecker {
      * Items appear in the returned list in the same order as they appear in
      * wordList.
      */
+
     public ArrayList<String> createList(String target) 
     {
         wordList = new ArrayList<String>();
@@ -30,11 +37,4 @@ public class WordChecker {
         words.add("abandon");
     }
 
-    import java.util.ArrayList;
-    public class WordChecker 
-    {     public WordChecker(ArrayList<String> list)
-        {
-            wordList = list;
-        }
-    }    
 }
