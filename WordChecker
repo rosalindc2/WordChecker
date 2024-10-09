@@ -21,6 +21,20 @@ public class WordChecker {
      * Items appear in the returned list in the same order as they appear in
      * wordList.
      */
-    public ArrayList<String> createList(String target) {
-        /* to be implemented in part (b) */ }
+    public ArrayList<String> createList(String target) 
+    {
+        wordList = new ArrayList<String>();
+        words.add("an");
+        words.add("band");
+        words.add("band");
+        words.add("abandon");
+    }
+
+    import java.util.ArrayList;
+    public class WordChecker 
+    {     public WordChecker(ArrayList<String> list)
+        {
+            wordList = list;
+        }
+    }    
 }
