@@ -10,7 +10,6 @@ public class Main
         words.add("abandon");
         System.out.println(words);
 
-                
-        Wordchecker w = new WordChecker(words);
+        System.out.println(x.isWordChain());
     }
 }
