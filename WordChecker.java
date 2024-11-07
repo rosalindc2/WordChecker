@@ -6,7 +6,7 @@ public class WordChecker
 
     public WordChecker(ArrayList<String> list)
     {
-        wordList = ArrayList<String>
+        wordList = new ArrayList<String>();
     }
 
     public boolean isWordChain() 
@@ -23,12 +23,13 @@ public class WordChecker
 
     public ArrayList<String> createList(String target) 
     {
-        int targetLen = target.length();
+        // int targetLen = target.length();
         ArrayList<String>list = new ArrayList<String>();
         for(String s: wordList) 
         {
-            String add = s.substring(targetLen);
-            list.add(add);
+            if (s.indexOf(target) == 0 )
+            list.add(s.substring(target.length()));
+
         }
         return list;
     }
