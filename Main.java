@@ -12,5 +12,9 @@ public class Main
         System.out.println(words);
        WordChecker x = new WordChecker(words);
         System.out.println(x.isWordChain());
+        
+        System.out.println(x.createList("cat"));
+        System.out.println(x.createList("dog"));
+        System.out.println(x.createList("catch"));
     }
 }
